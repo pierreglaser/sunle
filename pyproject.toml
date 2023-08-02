@@ -1,0 +1,19 @@
+[tool.ruff]
+line-length = 88
+include = [
+"paper/src/sbibm-unle-extra/*.py",
+"src/unle/*.py",
+]
+exclude = ["__init__.py", "build", ".eggs"]
+select = ["I", "E", "F"]
+fix = false
+
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310']
+skip-string-normalization = false
+line-length = 88
+include = '''
+src/unle/.*\.py$|
+paper/src/sbibm-unle-extra/.*\.py$
+'''

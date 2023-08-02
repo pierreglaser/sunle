@@ -1,0 +1,44 @@
+name: unle-gpu
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.9
+  - pip=22.3.1
+  - numpy=1.23
+  - scipy=1.9.3
+  - chex=0.1.7
+  - cuda-nvcc=11.6
+  - cuda-toolkit<12
+  - jaxlib=0.4.7=*cuda112*
+  - jax=0.4.8
+  - pytorch=1.13.1=*cuda*
+  - optax=0.1.2
+  - blackjax=0.9.6
+  - flax=0.6.1
+  - numpyro=0.11.0
+  - mpi4py=3.1.4
+  - ipykernel=6.22.0
+  - ipywidgets
+  - pytest
+  - pytest-xdist
+  - pandas=1.5.2
+  - pyro-ppl=1.8.3
+  - scikit-learn=1.2.0
+  - pymc3=3.11.4
+  - setuptools<60.0
+  - arviz=0.13.0
+  - julia
+  - typing_extensions=4.4.0
+  - loky=3.4
+  - distributed=2023.4
+  - dask-jobqueue=0.7
+  - pip:
+    - git+https://github.com/diyabc/abcranger@027bff7f8c5e5443edbeba0a2f57a7d226c2a2c3; platform_system == "Darwin"
+    - pyabcranger; platform_system == "Linux"
+    - git+https://github.com/eth-cscs/abcpy@caf0fd899424da69c0ef0bcd499696c5a077cdb1
+    - diffeqtorch==1.0.0
+    - sbi==0.21.0
+    - seaborn==0.12.2
+    - statsmodels==0.13.5

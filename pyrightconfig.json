@@ -1,0 +1,13 @@
+{
+"venv": "unle-cpu",
+"include": ["./src/unle/**/*", "./paper/src/sbibm-unle-extra/**/*"],
+"reportPrivateImportUsage": false,
+"reportIncompatibleMethodOverride": "warning",
+"reportIncompatibleVariableOverride": "warning",
+"reportPrivateUsage": "warning",
+"reportInconsistentConstructor": "error",
+"reportImportCycles": "warning",
+"reportMissingParameterType": "none",
+"reportPropertyTypeMismatch": "warning",
+"reportMissingTypeArgument": "none"
+}
